@@ -1,0 +1,22 @@
+{
+  "name": "conversation.commerce.proxy",
+  "version": "1.0.0",
+  "description": "chat bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek-net/ConversationCommerce.Proxy.git"
+  },
+  "author": "Abhishek Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishek-net/ConversationCommerce.Proxy/issues"
+  },
+  "homepage": "https://github.com/abhishek-net/ConversationCommerce.Proxy#readme",
+  "dependencies": {
+    "http-proxy": "^1.16.2"
+  }
+}
