@@ -5,17 +5,17 @@ let httpProxy = require('http-proxy');
 
 var proxy = httpProxy.createProxyServer({});
 var server = http.createServer(function (req, res) {
-    proxy.web(req, res, { target: 'http://sapient5.evaluation.dw.demandware.net' });
+    proxy.web(req, res, { target: 'https://sapient5.evaluation.dw.demandware.net' });
 });
 ///s/SiteGenesisGlobal
 server.on("/on", (req, res) => {
     proxy.web(req, res, {
-        target: 'http://sapient5.evaluation.dw.demandware.net/on'
+        target: 'https://sapient5.evaluation.dw.demandware.net/on'
     });
 });
 server.on("/static", (req, res) => {
     proxy.web(req, res, {
-        target: 'http://sapient5.evaluation.dw.demandware.net/static'
+        target: 'https://sapient5.evaluation.dw.demandware.net/static'
     });
 });
 server.listen(process.env.PORT || 5050);
